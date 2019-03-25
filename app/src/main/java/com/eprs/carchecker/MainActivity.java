@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    // Amikooo pushpush
 
     private void getTypedNum() {
         Log.e(TAG, "getTypedNum: " + "called");
