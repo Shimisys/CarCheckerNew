@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
         new ReadFromUrl().execute();
 
         getCameraRecognaze();
+        //erez
     }
 
     @Override
