@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/carbg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgLogo"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/handii"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/lblDescription"
+        android:textColor="#fff"
+        android:layout_below="@id/imgLogo"
+        android:text="באפליקציה זו תוכלו לסרוק לוחית רישוי ולבדוק האם הרכב רשום במאגר הרכבים שנושאים תג נכה"/>
+
+    <SurfaceView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@+id/lblDescription"
+        android:id="@+id/surfaceView"
+        android:background="@drawable/rounded_inside_corners"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/surfaceView"
+        android:layout_margin="16dp"
+        android:id="@+id/llayout">
+        <EditText
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000-00-000"
+            android:textSize="30dp"
+            android:id="@+id/txtCarNum"
+            android:background="#90464545"
+            android:textColorHint="#ffff"
+            android:textColor="#fff"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:text="Check car"
+            android:id="@+id/btnCheckNum"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:layout_alignParentBottom="true"
+        android:textSize="20sp"
+        android:id="@+id/lblCarRec"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:src="@drawable/v"
+        android:visibility="invisible"
+        android:id="@+id/imgResualt"
+        android:layout_below="@+id/llayout"
+        />
+</RelativeLayout>
